@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"sourceMap": true,
+		"target": "es5",
+		"module": "commonjs",
+		"strict": true,
+		"lib": ["es5", "es6", "dom"],
+		"moduleResolution": "node",
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"strictNullChecks": true,
+		"noImplicitReturns": true,
+		"removeComments": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true
+	},
+	"include": [
+		"./src/**/*"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}

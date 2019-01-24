@@ -1,0 +1,21 @@
+{
+	"rulesDirectory": [
+		"tslint-plugin-prettier"
+	],
+	"extends": [
+		"tslint-config-standard",
+		"tslint-config-prettier"
+	],
+	"rules": {
+		"indent": [true, "tabs", 4],
+		"prettier": [
+			true,
+			{
+				"useTabs": true,
+				"tabWidth": 4,
+				"singleQuote": true,
+				"semi": true
+			}
+		]
+	}
+}
