@@ -1,0 +1,62 @@
+{
+	"plugins": [
+		"stylelint-scss"
+	],
+	"ignoreFiles": [],
+	"rules": {
+		"string-quotes": "single",
+		"no-duplicate-selectors": true,
+		"color-hex-case": "lower",
+		"color-hex-length": "short",
+		"color-named": "never",
+		"color-no-invalid-hex": true,
+		"selector-combinator-space-after": "always",
+		"selector-attribute-quotes": "always",
+		"selector-attribute-operator-space-before": "never",
+		"selector-attribute-operator-space-after": "never",
+		"selector-attribute-brackets-space-inside": "never",
+		"declaration-bang-space-before": "always",
+		"declaration-bang-space-after": "never",
+		"declaration-block-trailing-semicolon": "always",
+		"declaration-colon-space-before": "never",
+		"declaration-colon-space-after": "always",
+		"declaration-block-semicolon-newline-after": "always-multi-line",
+		"declaration-property-value-blacklist": {
+			"border": ["/0/"],
+			"border-top": ["/0/"],
+			"border-right": ["/0/"],
+			"border-bottom": ["/0/"],
+			"border-left": ["/0/"]
+		},
+		"function-comma-space-after": "always-single-line",
+		"function-parentheses-space-inside": "never",
+		"value-no-vendor-prefix": true,
+		"no-eol-whitespace": true,
+		"number-leading-zero": "never",
+		"number-no-trailing-zeros": true,
+		"comment-whitespace-inside": "always",
+		"selector-pseudo-element-colon-notation": "double",
+		"selector-pseudo-class-parentheses-space-inside": "never",
+		"selector-class-pattern": "^[a-z][-a-z0-9_]*$",
+		"media-feature-range-operator-space-after": "always",
+		"media-feature-parentheses-space-inside": "never",
+		"media-feature-name-no-vendor-prefix": true,
+		"media-feature-colon-space-before": "never",
+		"media-feature-colon-space-after": "always",
+		"block-opening-brace-space-before": "always",
+		"block-closing-brace-newline-after": [
+			"always", {
+				"ignoreAtRules": [ "if", "else" ]
+			}
+		],
+		"at-rule-name-space-after": "always",
+		"scss/at-else-closing-brace-newline-after": "always-last-in-chain",
+		"scss/at-else-closing-brace-space-after": "always-intermediate",
+		"scss/at-else-empty-line-before": "never",
+		"scss/at-if-closing-brace-newline-after": "always-last-in-chain",
+		"scss/at-if-closing-brace-space-after": "always-intermediate",
+		"scss/percent-placeholder-pattern": "^[a-z][-a-z0-9_]*$",
+		"scss/dollar-variable-colon-space-before": "never",
+		"scss/dollar-variable-colon-space-after": "always-single-line"
+	}
+}
