@@ -4,8 +4,13 @@ module.exports = {
 	mode: 'development',
 
 	// メインとなるJavaScriptファイル（エントリーポイント）
-	entry: './src/assets/javascript/main.ts',
-
+	entry: {
+		'./docs/assets/javascript/bundle': './src/assets/javascript/main.ts'
+	},
+	output: {
+		path: __dirname,
+		filename: '[name].js'
+	},
 	module: {
 		rules: [
 			{
