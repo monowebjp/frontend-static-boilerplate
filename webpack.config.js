@@ -1,8 +1,6 @@
 module.exports = {
-	// モード値を production に設定すると最適化された状態で、
-	// development に設定するとソースマップ有効でJSファイルが出力される
 	mode: 'development',
-
+	devtool: 'inline-source-map',
 	// メインとなるJavaScriptファイル（エントリーポイント）
 	entry: {
 		'./docs/assets/javascript/bundle': './src/assets/javascript/main.ts'
@@ -14,6 +12,18 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				enforce: 'pre',
+				test: /\.ts?$/,
+				use: [
+					{
+						loader: 'tslint-loader',
+						options: {
+							typeCheck: true,
+							fix: true
+						}
+					}
+				]
+			}, {
 				// 拡張子 .ts の場合
 				test: /\.ts$/,
 				// TypeScript をコンパイルする
