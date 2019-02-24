@@ -1,7 +1,7 @@
 module.exports = {
 	mode: 'production',
 	entry: {
-		'./docs/assets/javascript/bundle': './src/assets/javascript/main.ts'
+		'./docs/assets/js/bundle': './src/assets/js/main.ts'
 	},
 	output: {
 		path: __dirname,
