@@ -7,8 +7,8 @@ indent_size=4
 
 [{.babelrc,.prettierrc,.stylelintrc,.eslintrc,jest.config,*.json,*.jsb3,*.jsb2,*.bowerrc}]
 indent_style=tab
-indent_size=4
+indent_size=2
 
 [yarn.lock]
 indent_style=tab
-indent_size=4
+indent_size=2
