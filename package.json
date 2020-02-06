@@ -1,0 +1,8 @@
+{
+  "name": "frontend-static-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/monowebjp/frontend-static-boilerplate.git",
+  "author": "<capybara@monoweb.jp>",
+  "license": "MIT"
+}
