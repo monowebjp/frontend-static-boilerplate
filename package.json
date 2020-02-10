@@ -6,6 +6,10 @@
   "repository": "https://github.com/monowebjp/frontend-static-boilerplate.git",
   "author": "monowebjp <capybara@monoweb.jp> (https://github.com/monowebjp/)",
   "license": "MIT",
+  "engines": {
+    "node": "12.15.0",
+    "npm": ">=6.13.4"
+  },
   "scripts": {
     "image": "node imagemin-config.js",
     "css": "run-s css:sass css:postcss",
