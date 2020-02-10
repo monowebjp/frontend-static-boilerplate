@@ -9,3 +9,4 @@ mv frontend-static-boilerplate-master/.eslintrc.json ./.eslintrc.json
 mv frontend-static-boilerplate-master/.gitignore ./.gitignore
 mv frontend-static-boilerplate-master/.stylelintrc ./.stylelintrc
 rm -r frontend-static-boilerplate-master
+
