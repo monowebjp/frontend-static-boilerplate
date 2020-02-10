@@ -17,5 +17,8 @@ rm -r frontend-static-boilerplate-master
 sed -i -e "s/LOCAL_HOST_NAME/$1/g" ./bs-config.js
 sed -i -e "s/LOCAL_HOST_NAME/$1/g" ./docker-compose.yml
 sed -i -e "s/LOCAL_HOST_NAME/$1/g" ./docker/nginx.conf
+rm bs-config.js-e
+rm docker-compose.yml-e
+rm docker/nginx.conf-e
 
 rm setup.sh
