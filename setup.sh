@@ -1,1 +1,1 @@
-wget https://github.com/monowebjp/frontend-static-boilerplate/blob/master
+curl -L -O https://github.com/monowebjp/frontend-static-boilerplate/archive/master.zip

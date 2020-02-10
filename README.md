@@ -1,3 +1,3 @@
 ```shell script
-wget https://github.com/monowebjp/frontend-static-boilerplate/blob/master/setup.sh
+curl -O https://github.com/monowebjp/frontend-static-boilerplate/raw/master/setup.sh
 ```
