@@ -1,9 +1,10 @@
 {
+  "private": true,
   "name": "frontend-static-boilerplate",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/monowebjp/frontend-static-boilerplate.git",
-  "author": "<capybara@monoweb.jp>",
+  "author": "monowebjp <capybara@monoweb.jp> (https://github.com/monowebjp/)",
   "license": "MIT",
   "scripts": {
     "image": "node imagemin-config.js",
@@ -27,6 +28,7 @@
     "css-mqpacker": "^7.0.0",
     "csswring": "^7.0.0",
     "ejs-cli": "^2.1.1",
+    "eslint": "^6.8.0",
     "imagemin": "^7.0.1",
     "imagemin-cli": "^5.1.0",
     "imagemin-gifsicle": "^7.0.0",
@@ -41,7 +43,6 @@
     "stylelint": "^13.0.0",
     "stylelint-scss": "^3.14.2",
     "ts-loader": "^6.2.1",
-    "tslint": "^6.0.0",
     "typescript": "^3.7.5",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
