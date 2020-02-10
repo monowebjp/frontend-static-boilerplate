@@ -2,11 +2,10 @@
   "compilerOptions": {
     "sourceMap": true,
     "target": "es5",
-    "module": "commonjs",
+    "module": "es2015",
     "strict": true,
     "lib": [
-      "es5",
-      "es6",
+      "es2019",
       "dom"
     ],
     "moduleResolution": "node",
@@ -21,7 +20,7 @@
     "esModuleInterop": true
   },
   "include": [
-    "./src/**/*"
+    "./src/assets/js/**/*"
   ],
   "exclude": [
     "node_modules"

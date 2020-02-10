@@ -1,6 +1,7 @@
 {
   "plugins": [
-    "stylelint-scss"
+    "stylelint-scss",
+    "stylelint-order"
   ],
   "ignoreFiles": [],
   "rules": {
@@ -23,19 +24,19 @@
     "declaration-block-semicolon-newline-after": "always-multi-line",
     "declaration-property-value-blacklist": {
       "border": [
-        "/0/"
+        "/none/"
       ],
       "border-top": [
-        "/0/"
+        "/none/"
       ],
       "border-right": [
-        "/0/"
+        "/none/"
       ],
       "border-bottom": [
-        "/0/"
+        "/none/"
       ],
       "border-left": [
-        "/0/"
+        "/none/"
       ]
     },
     "function-comma-space-after": "always-single-line",

@@ -16,7 +16,16 @@ module.exports = {
     "ui": {
         "port": 3001
     },
-    "files": false,
+    "files": [
+        "dist/**/*.html",
+        "dist/assets/css/*.css",
+        "dist/assets/js/*.js",
+        "dist/**/*.png",
+        "dist/**/*.gif",
+        "dist/**/*.jpg",
+        "dist/**/*.jpeg",
+        "dist/**/*.svg",
+        "dist/**/*.webp"],
     "watchEvents": [
         "change"
     ],
@@ -26,8 +35,9 @@ module.exports = {
     "watchOptions": {
         "ignoreInitial": true
     },
-    "server": './docs',
-    "proxy": false,
+    "server": false,
+    "https": true,
+    "proxy": "monoweb.jp.local:8000",
     "port": 3000,
     "middleware": false,
     "serveStatic": [],
