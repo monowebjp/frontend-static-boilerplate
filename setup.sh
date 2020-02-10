@@ -1,0 +1,1 @@
+wget https://github.com/monowebjp/frontend-static-boilerplate/blob/master
