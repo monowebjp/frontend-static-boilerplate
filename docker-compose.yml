@@ -7,7 +7,7 @@ services:
             - 443:443
         restart: always
         environment:
-            DOMAINS: 'monoweb.jp.local -> http://web:8000'
+            DOMAINS: 'LOCAL_HOST_NAME -> http://web:8000'
             STAGE: local
         volumes:
             - ./org-chimata-ssl-certs:/var/lib/https-portal
