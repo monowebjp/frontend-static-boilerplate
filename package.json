@@ -6,12 +6,7 @@
   "author": "<capybara@monoweb.jp>",
   "license": "MIT",
   "scripts": {
-    "image": "run-s image:*",
-    "image:gif": "imagemin -p=gifsicle src/**/*.gif --out-dir=dist/*",
-    "image:jpg": "imagemin -p=mozjpeg src/**/*.jpg --out-dir=dist/*",
-    "image:png": "imagemin -p=pngquant src/**/*.png --out-dir=dist/*",
-    "image:svg": "imagemin -p=svgo src/**/*.svg --out-dir=dist/*",
-    "image:webp": "imagemin -p=webp dist/**/*.[gif|jpg|png] --out-dir=dist/*",
+    "image": "node imagemin-config.js",
     "css": "run-s css:sass css:postcss",
     "css:postcss": "postcss \"dist/assets/css/**/*.css\" --base dist/assets/css/ -d dist/assets/css -c postcss.config.js",
     "css:sass": "sass src/assets/scss/ -i dist/assets/css/ --output-style expanded --source-map true",
@@ -22,7 +17,7 @@
     "watch:ejs": "chokidar \"src/**/*.ejs\" -c \"npm run ejs\"",
     "watch:css": "chokidar \"src/assets/scss/**/*.scss\" -c \"npm run css\"",
     "watch:js": "chokidar \"src/assets/js/**/*.ts\" -c \"npm run js\"",
-    "watch:image": "chokidar  \"src/**/*.[gif|jpg|png|svg]\" -c \"npm run image\""
+    "watch:image": "chokidar  \"src/**/*.(gif|jpg|png|svg)\" -c \"npm run image\""
   },
   "devDependencies": {
     "@frctl/fractal": "^1.2.1",
@@ -44,6 +39,7 @@
     "postcss-cli": "^7.1.0",
     "sass": "^1.25.0",
     "stylelint": "^13.0.0",
+    "stylelint-scss": "^3.14.2",
     "ts-loader": "^6.2.1",
     "tslint": "^6.0.0",
     "typescript": "^3.7.5",
