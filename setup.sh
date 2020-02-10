@@ -10,4 +10,6 @@ mv frontend-static-boilerplate-master/.gitignore ./.gitignore
 mv frontend-static-boilerplate-master/.stylelintrc ./.stylelintrc
 rm -r frontend-static-boilerplate-master
 
-sed -i -e "s/LOCAL_HOST_NAME/$2/g" ./bs-config.js
+echo $#
+echo $1
+sed -i -e "s/LOCAL_HOST_NAME/$1/g" ./bs-config.js
