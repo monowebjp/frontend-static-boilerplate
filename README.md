@@ -1,6 +1,6 @@
-<div style="text-align: center;">
-<div>Frontend Static Boilerplate</div>
-<div>静的Webサイトを作るためのスタートキット</div>
+<div align="center">
+<h1>Frontend Static Boilerplate</h1>
+<p>静的Webサイトを作るためのスタートキット</p>
 </div>
 
 ## Overview
