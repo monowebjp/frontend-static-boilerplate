@@ -21,6 +21,13 @@ rm bs-config.js-e
 rm docker-compose.yml-e
 rm docker/nginx.conf-e
 
+
 grep "$1" /private/etc/hosts
+
+if [ $? = 0 ]; then
+    echo "grep検索にマッチした行があり"
+else
+    echo "grep検索にマッチした行はなし"
+fi
 
 rm setup.sh
