@@ -38,11 +38,12 @@ rm -r frontend-static-boilerplate-master
 sed -i -e "s/LOCAL_HOST_NAME/$HOST_NAME/g" ./bs-config.js
 sed -i -e "s/LOCAL_HOST_NAME/$HOST_NAME/g" ./docker-compose.yml
 sed -i -e "s/LOCAL_HOST_NAME/$HOST_NAME/g" ./docker/nginx.conf
-sed -i -e "s/frontend-static-boilerplate/$PROJECT_NAME/g" ./package.json
-sed -i -e "s/PROJECT_NAME/$PROJECT_NAME/g" ./README.md
 
 git config --get remote.origin.url
 sed -i -e "s/https:\/\/github.com\/monowebjp\/frontend-static-boilerplate.git/$?/g" ./package.json
+
+sed -i -e "s/frontend-static-boilerplate/$PROJECT_NAME/g" ./package.json
+sed -i -e "s/PROJECT_NAME/$PROJECT_NAME/g" ./README.md
 
 rm *-e
 
