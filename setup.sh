@@ -6,7 +6,10 @@ if [ $? = 0 ]; then
     echo "hostsが追加されているので追記はSkipします"
 else
     echo "hostsに追記します"
-    echo "127.0.0.1  $1" >> /private/etc/hosts
+    cp /private/etc/hosts /private/etc/hosts.tmp
+    echo "127.0.0.1  $1" >> /private/etc/hosts.tmp
+    rm /private/etc/hosts
+    mv /private/etc/hosts.tmp /private/etc/hosts
 fi
 
 curl -L -O https://github.com/monowebjp/frontend-static-boilerplate/archive/master.zip
