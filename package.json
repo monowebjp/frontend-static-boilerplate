@@ -11,6 +11,7 @@
     "npm": ">=6.13.4"
   },
   "scripts": {
+    "start": "run-p docker watch server",
     "image": "node imagemin-config.js",
     "css": "run-s css:lint css:sass css:postcss",
     "css:postcss": "postcss \"dist/assets/css/**/*.css\" --base dist/assets/css/ -d dist/assets/css -c postcss.config.js",
@@ -27,6 +28,7 @@
     "watch:js": "chokidar \"src/assets/js/**/*.ts\" -c \"npm run js\"",
     "watch:image": "chokidar  \"src/**/*.(gif|jpg|png|svg)\" -c \"npm run image\"",
     "server": "browser-sync start --config bs-config.js",
+    "docker": "docker-compose up -d",
     "update": "ncu -u"
   },
   "devDependencies": {

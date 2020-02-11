@@ -32,3 +32,9 @@ rm docker-compose.yml-e
 rm docker/nginx.conf-e
 
 rm setup.sh
+
+yarn install
+docker-compose up -d
+npm start
+
+echo '環境を構築しました'
