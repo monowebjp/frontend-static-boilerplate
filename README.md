@@ -1,5 +1,7 @@
-Frontend Static Boilerplate  
-静的Webサイトを作るためのスタートキット
+<div style="text-align: center;">
+<h1>Frontend Static Boilerplate</h1>
+<p>静的Webサイトを作るためのスタートキット</p>
+</div>
 
 ## Overview
 DockerとBrowser-syncでhttpsサーバーを建て、構築します。  
@@ -20,3 +22,5 @@ sudo sh setup.sh
 ```shell script
 npm start
 ```
+### edit
+src以下のファイルを編集して更新します。
