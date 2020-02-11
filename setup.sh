@@ -21,4 +21,6 @@ rm bs-config.js-e
 rm docker-compose.yml-e
 rm docker/nginx.conf-e
 
+cat /private/etc/hosts
+
 rm setup.sh
