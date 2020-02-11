@@ -30,6 +30,9 @@
     "server": "run-s server:docker server:bs",
     "server:bs": "browser-sync start --config bs-config.js",
     "server:docker": "docker-compose up -d",
+    "end": "run-s end:docker end:watch end:watch end:watch",
+    "end:dokcer": "docker-compose down",
+    "end:watch": "killall node",
     "update": "ncu -u"
   },
   "devDependencies": {
