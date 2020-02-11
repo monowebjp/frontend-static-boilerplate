@@ -33,6 +33,8 @@ rm docker/nginx.conf-e
 
 rm setup.sh
 
+find . -exec chmod 777 {} +
+
 yarn install
 docker-compose up -d
 npm start
