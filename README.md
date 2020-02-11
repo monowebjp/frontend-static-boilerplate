@@ -1,6 +1,7 @@
 <div align="center">
 <h1>Frontend Static Boilerplate</h1>
 <p>静的Webサイトを作るためのスタートキット</p>
+<img src="https://github.com/monowebjp/frontend-static-boilerplate/raw/master/documents/screenshot.png" alt="">
 </div>
 
 ## Overview
