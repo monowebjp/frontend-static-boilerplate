@@ -1,7 +1,11 @@
-```shell script
-curl -L -O https://github.com/monowebjp/frontend-static-boilerplate/raw/master/setup.sh
-```
+Frontend Static Boilerplate
 
+## Overview
+静的Webサイトを作るためのスタートキットです。
+
+## Installation and usage 
 ```shell script
-sudo sh setup.sh LOCAL_HOST_NAME
+cd REPOSITORY_DIRECTORY
+curl -L -O https://github.com/monowebjp/frontend-static-boilerplate/raw/master/setup.sh
+sudo sh setup.sh
 ```
