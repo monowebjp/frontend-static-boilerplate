@@ -47,12 +47,12 @@ sed -i -e "s/PROJECT_NAME/$PROJECT_NAME/g" ./README.md
 
 rm *-e
 
-rm setup.sh
-
-find . -exec chmod 777 {} +
-
 yarn install
 docker-compose up -d
 npm start
 
+find . -exec chmod 777 {} +
+
 echo '環境を構築しました'
+
+rm setup.sh
