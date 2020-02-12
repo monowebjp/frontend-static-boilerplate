@@ -23,5 +23,40 @@ sudo sh setup.sh
 ```shell script
 npm start
 ```
-### edit
-src以下のファイルを編集して更新します。
+
+## Directories and Files
+```.
+   ├── README.md                  # 本ファイル、プロジェクトに反映する際は削除される
+   ├── documents                  # ドキュメントで使う画像等を格納するディレクトリ
+   │   └── screenshot.png
+   ├── README.sample.md           # 適用先プロジェクトのREADMEの基となるファイル
+   ├── bs-config.js               # ブラウザの自動更新設定ファイル
+   ├── docker
+   │   └── nginx.conf             # ローカルサーバーの設定ファイル
+   ├── docker-compose.yml         # ローカルサーバーの設定ファイル
+   ├── ejs.config.json            # ejsを書く際に使用する共通設定ファイル
+   ├── fractalfile.js             # スタイルガイドを制作するための設定ファイル
+   ├── imagemin-config.js         # 画像圧縮のためのスクリプトファイル
+   ├── package.json               # boilerplateをしようするためのスクリプトファイル
+   ├── postcss.config.js          # CSSをビルドする際の設定ファイル
+   ├── setup.sh                   # boilerplateの初期設定を行うための実行ファイル
+   ├── src                        # 実プロジェクトで編集するファイルを格納したディレクトリ
+   │   ├── assets                 # Sass, JS等を格納するディレクトリ
+   │   │   ├── js                 # JSファイルを格納するディレクトリ
+   │   │   └── scss               # Sassファイルを格納するディレクトリ
+   │   │       ├── foundation     # base, normalize, palleteなどのSass
+   │   │       ├── layouts        # header, footerなど全体レイアウトのSass
+   │   │       ├── object
+   │   │       │   ├── component  # 汎用的に使うパーツのSass
+   │   │       │   ├── project    # 特定ページ固有パーツのSass
+   │   │       │   └── utility    # 余白、文字サイズ等の設定classのSass
+   │   │       └── style.scss
+   │   ├── partials               # 複数HTMLで共通して使用するパーツを格納する
+   │   └── index.ejs              # HTMLの元となるファイル
+   ├── tsconfig.json              # JSの記述ルールを記載したファイル
+   ├── webpack.config.js          # JSのビルド設定を記載したファイル
+   ├── .editorconfig              # インデント等の記述ルールを記載したファイル
+   ├── .stylelint                 # Sassの記述ルールを記載したファイル
+   ├── .gitignore                 # Gitに共有しないファイルを記述する
+   └── yarn.lock                  # 使用しているパッケージの情報（手動では編集しない）
+```
