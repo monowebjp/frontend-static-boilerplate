@@ -1,10 +1,24 @@
 #!/bin/sh
 
-echo "Please input a project name."
+echo "------------------------------------"
+echo "Please input a PROJECT_NAME."
+echo "------------------------------------"
 read PROJECT_NAME
-
-echo "Please input a host name."
+echo ""
+echo "------------------------------------"
+echo "Please input a HOST_NAME."
+echo "------------------------------------"
 read HOST_NAME
+echo ""
+echo "------------------------------------"
+echo "Please input a PUBLISH_URL."
+echo "------------------------------------"
+read PUBLISH_URL
+echo ""
+echo "------------------------------------"
+echo "Please input a STAGING_URL."
+echo "------------------------------------"
+read STAGING_URL
 
 grep "$HOST_NAME" /private/etc/hosts
 
@@ -45,6 +59,9 @@ sed -i -e "s/https:\/\/github.com\/monowebjp\/frontend-static-boilerplate.git/$R
 sed -i -e "s/frontend-static-boilerplate/$PROJECT_NAME/g" ./package.json
 sed -i -e "s/PROJECT_NAME/$PROJECT_NAME/g" ./README.md
 sed -i -e "s/PROJECT_NAME/$PROJECT_NAME/g" ./fractalfile.js
+sed -i -e "s/PROJECT_NAME/$PROJECT_NAME/g" ./styleguide/index.md
+sed -i -e "s/PUBLISH_URL/$PUBLISH_URL/g" ./styleguide/index.md
+sed -i -e "s/STAGING_URL/$STAGING_URL/g" ./styleguide/index.md
 
 rm *-e
 

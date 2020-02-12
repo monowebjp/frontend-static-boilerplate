@@ -6,7 +6,7 @@ context:
     - name: 本番環境
       url: PUBLISH_URL
     - name: ステージング環境
-      url: STAGING
+      url: STAGING_URL
 ---
 PROJECT_NAMEで使われるモジュールを作成する際のコーディングガイドです。
 
@@ -73,8 +73,8 @@ Utilityの多くは単一のプロパティで定義されますが、clearfix�
 
 ## 命名規則(component, project)
 MindBEMdingをベースとして、`Block`, `Element`, `Modifier`に分類して命名します。
-* `Block`と`Element`間は"\_"<small>(アンダースコア)</small>でつなぎます
-* `Block`または`Element`と`Modifier`間は"\-"<small>(ハイフン)</small>でつなぎます
+* `Block`と`Element`間は"\__"<small>(アンダースコア)</small>でつなぎます
+* `Block`または`Element`と`Modifier`間は"\--"<small>(ハイフン)</small>でつなぎます
 <br><br>
 各レイヤーを示すためのprefix（プレフィックス）をつけます。
 * Componentレイヤーのモジュール = "c-"
@@ -83,7 +83,7 @@ MindBEMdingをベースとして、`Block`, `Element`, `Modifier`に分類して
 要素名が2単語以上になる場合、単語の区切りはキャメルケースで示します。
 * longClassName
 <br>
-クラス名構成）`prefix-blockNmae_elemntName-modifyName`
+クラス名構成）`prefix-blockNmae__elemntName--modifyName`
 <br><br>
 クラス名の決め方
 1. 文脈を持たない要素は見た目
@@ -111,7 +111,7 @@ MindBEMdingをベースとして、`Block`, `Element`, `Modifier`に分類して
 ## カスケーディング
 原則として、モジュール間のカスケーディング、他のモジュールを親とするセレクタを用いたカスケーディングは禁止とします。
 例外として、ProjectレイヤーがComponentレイヤーのモジュールを変更することは許容します。
-```
+<pre><code style="border: 1px solid #cc0000; background: #ccff00;">
 .c-button {
   .c-dialog {        // NG
     color: #333;
@@ -126,7 +126,8 @@ MindBEMdingをベースとして、`Block`, `Element`, `Modifier`に分類して
     color: #333;
   }
 }
-
+</code></pre>
+```
 .p-articles {
   .c-media_image {  // OK
     color: #333;
