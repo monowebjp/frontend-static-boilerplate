@@ -37,7 +37,7 @@ npm start
    ├── ejs.config.json            # ejsを書く際に使用する共通設定ファイル
    ├── fractalfile.js             # スタイルガイドを制作するための設定ファイル
    ├── imagemin-config.js         # 画像圧縮のためのスクリプトファイル
-   ├── package.json               # boilerplateをしようするためのスクリプトファイル
+   ├── package.json               # boilerplateを使用するためのスクリプトファイル
    ├── postcss.config.js          # CSSをビルドする際の設定ファイル
    ├── setup.sh                   # boilerplateの初期設定を行うための実行ファイル
    ├── src                        # 実プロジェクトで編集するファイルを格納したディレクトリ
