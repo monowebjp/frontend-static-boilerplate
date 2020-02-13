@@ -1,4 +1,4 @@
-<link href="./styleguide.css" rel="stylesheet"></link>
+<link href="https://raw.githubusercontent.com/monowebjp/frontend-static-boilerplate/developer/styleguide/styleguide.css" rel="stylesheet"></link>
 
 ---
 title: PROJECT_NAME コーディングガイド
