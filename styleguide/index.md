@@ -1,4 +1,9 @@
-<link href="https://kevinburke.bitbucket.io/markdowncss/markdown.css" rel="stylesheet"></link>
+<srtyle>
+pre > .ng {
+background-color: #cf0;
+border: 1px solid #cf0;
+}
+</style>
 ---
 title: PROJECT_NAME コーディングガイド
 status: draft
@@ -112,7 +117,7 @@ MindBEMdingをベースとして、`Block`, `Element`, `Modifier`に分類して
 ## カスケーディング
 原則として、モジュール間のカスケーディング、他のモジュールを親とするセレクタを用いたカスケーディングは禁止とします。
 例外として、ProjectレイヤーがComponentレイヤーのモジュールを変更することは許容します。
-<pre><code style="border: 1px solid #cc0000; background: #ccff00;">
+<pre><code class="ng">
 .c-button {
   .c-dialog {        // NG
     color: #333;
