@@ -123,7 +123,6 @@ MindBEMdingをベースとして、`Block`, `Element`, `Modifier`に分類して
     color: #333;
   }
 }
-</div>
 
 .p-articles {
   .p-comments {  // NG
