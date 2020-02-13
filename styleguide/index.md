@@ -9,7 +9,7 @@ context:
       url: STAGING_URL
 ---
 
-<link href="https://kevinburke.bitbucket.io/markdowncss/markdown.css" rel="stylesheet"></link>
+<link href="https://raw.githubusercontent.com/monowebjp/frontend-static-boilerplate/developer/styleguide/styleguide.css" rel="stylesheet"></link>
 
 PROJECT_NAMEで使われるモジュールを作成する際のコーディングガイドです。
 
@@ -114,8 +114,7 @@ MindBEMdingをベースとして、`Block`, `Element`, `Modifier`に分類して
 ## カスケーディング
 原則として、モジュール間のカスケーディング、他のモジュールを親とするセレクタを用いたカスケーディングは禁止とします。
 例外として、ProjectレイヤーがComponentレイヤーのモジュールを変更することは許容します。
-<div class="ng">
-<pre><code>
+```ng
 .c-button {
   .c-dialog {        // NG
     color: #333;
@@ -131,8 +130,8 @@ MindBEMdingをベースとして、`Block`, `Element`, `Modifier`に分類して
     color: #333;
   }
 }
-</code></pre>
 ```
+```ok
 .p-articles {
   .c-media_image {  // OK
     color: #333;
