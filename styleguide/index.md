@@ -1,9 +1,5 @@
-<srtyle>
-pre > .ng {
-background-color: #cf0;
-border: 1px solid #cf0;
-}
-</style>
+<link href="./styleguide.css" rel="stylesheet"></link>
+
 ---
 title: PROJECT_NAME コーディングガイド
 status: draft
