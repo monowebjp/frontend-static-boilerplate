@@ -1,4 +1,3 @@
-<link href="https://kevinburke.bitbucket.io/markdowncss/markdown.css" rel="stylesheet"></link>
 ---
 title: PROJECT_NAME コーディングガイド
 status: draft
@@ -9,6 +8,9 @@ context:
     - name: ステージング環境
       url: STAGING_URL
 ---
+
+<link href="https://kevinburke.bitbucket.io/markdowncss/markdown.css" rel="stylesheet"></link>
+
 PROJECT_NAMEで使われるモジュールを作成する際のコーディングガイドです。
 
 ## 基本原則
