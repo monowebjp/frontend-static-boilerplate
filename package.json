@@ -18,7 +18,7 @@
     "css:sass": "sass --source-map-urls=relative src/assets/scss:dist/assets/css",
     "css:lint": "stylelint \"src/assets/scss/**/*.scss\" --config .stylelintrc",
     "ejs": "ejs-cli -b src/ \"**/[^_]*.ejs\" -o dist/ --options ejs.config.json",
-    "fractal": "fractal start --sync",
+    "styleguide": "fractal start --sync",
     "js": "run-s js:lint js:ts",
     "js:ts": "webpack",
     "js:lint": "eslint src/assets/js -c .eslintrc.json --ext ts,tsx; exit 0",
