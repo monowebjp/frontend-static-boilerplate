@@ -114,7 +114,7 @@ MindBEMdingをベースとして、`Block`, `Element`, `Modifier`に分類して
 ## カスケーディング
 原則として、モジュール間のカスケーディング、他のモジュールを親とするセレクタを用いたカスケーディングは禁止とします。
 例外として、ProjectレイヤーがComponentレイヤーのモジュールを変更することは許容します。
-```ng
+```css
 .c-button {
   .c-dialog {        // NG
     color: #333;
@@ -130,7 +130,7 @@ MindBEMdingをベースとして、`Block`, `Element`, `Modifier`に分類して
   }
 }
 ```
-```ok
+```css
 .p-articles {
   .c-media_image {  // OK
     color: #333;
