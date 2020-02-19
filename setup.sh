@@ -58,7 +58,7 @@ sed -i -e "s/https:\/\/github.com\/monowebjp\/frontend-static-boilerplate.git/$R
 
 sed -i -e "s/frontend-static-boilerplate/$PROJECT_NAME/g" ./package.json
 sed -i -e "s/PROJECT_NAME/$PROJECT_NAME/g" ./README.md
-sed -i -e "s/PROJECT_NAME/$PROJECT_NAME/g" ./fractalfile.js
+sed -i -e "s/PROJECT_NAME/$PROJECT_NAME/g" ./fractal.js
 sed -i -e "s/PROJECT_NAME/$PROJECT_NAME/g" ./styleguide/index.md
 sed -i -e "s/PUBLISH_URL/$PUBLISH_URL/g" ./styleguide/index.md
 sed -i -e "s/STAGING_URL/$STAGING_URL/g" ./styleguide/index.md

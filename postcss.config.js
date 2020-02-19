@@ -344,6 +344,7 @@ module.exports = () => ({
             "unspecified-properties-position": "bottom"
         },
         'autoprefixer': {},
-        'csswring': {}
+        'csswring': {},
+        'css-mqpacker': {},
     }
 });
