@@ -10,12 +10,12 @@ fractal.set('project.title', 'FooCorp Component Library');
 fractal.components.set('ext', '.ejs');
 
 /* Tell Fractal where the components will live */
-fractal.components.set('path', __dirname + '/src/ejs/objects/components');
+fractal.components.set('path', __dirname + '/src/ejs/objects');
 // fractal.web.set('builder.dest', __dirname + '/build');
 /* Tell Fractal where the documentation pages will live */
 fractal.docs.set('path', __dirname + '/src/docs');
 
 /* Specify a directory of static assets */
-fractal.web.set('static.path', __dirname + '/styleguide');
+fractal.web.set('static.path', __dirname + '/dist/assets');
 
 /* Set the static HTML build destination */
