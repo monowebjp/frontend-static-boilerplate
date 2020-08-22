@@ -20,7 +20,7 @@
     "esModuleInterop": true
   },
   "include": [
-    "./src/assets/js/**/*"
+    "./src/sites/assets/js/**/*"
   ],
   "exclude": [
     "node_modules"

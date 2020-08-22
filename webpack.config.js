@@ -3,7 +3,7 @@ module.exports = {
     devtool: 'inline-source-map',
     // メインとなるJavaScriptファイル（エントリーポイント）
     entry: {
-        './dist/assets/js/bundle': './src/assets/js/main.ts'
+        './dist/assets/js/bundle': './src/sites/assets/js/main.ts'
     },
     output: {
         path: __dirname,
