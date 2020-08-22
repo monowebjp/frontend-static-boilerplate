@@ -35,7 +35,7 @@ npm start
    │   └── nginx.conf             # ローカルサーバーの設定ファイル
    ├── docker-compose.yml         # ローカルサーバーの設定ファイル
    ├── ejs.config.json            # ejsを書く際に使用する共通設定ファイル
-   ├── fractal.js             # スタイルガイドを制作するための設定ファイル
+   ├── fractal.js                 # スタイルガイドを制作するための設定ファイル
    ├── imagemin-config.js         # 画像圧縮のためのスクリプトファイル
    ├── package.json               # boilerplateを使用するためのスクリプトファイル
    ├── postcss.config.js          # CSSをビルドする際の設定ファイル
