@@ -12,11 +12,7 @@
   },
   "scripts": {
     "start": "run-p watch server",
-<<<<<<< HEAD
     "prod": "run-s clean image json prod:js prod:css prod:html",
-=======
-    "prod": "run-s clean prod:js prod:css prod:html",
->>>>>>> c4d71e37f92d761183fd9d007a62e7eece843960
     "clean": "rm -r -f dist/*",
     "image": "node imagemin-config.js",
     "css": "run-s css:lint css:sass css:postcss",
@@ -31,7 +27,6 @@
     "styleguide": "fractal start --sync",
     "js": "run-s js:lint js:ts",
     "js:ts": "webpack",
-<<<<<<< HEAD
     "js:lint": "eslint src/sites/assets/js -c .eslintrc.json --ext ts,tsx --fix; exit 0",
     "json": "cpx -C 'src/sites/**/*.json' dist",
     "prod:js": "run-s js:lint prod:js:ts",
@@ -41,15 +36,6 @@
     "watch:css": "chokidar \"src/sites/assets/scss/**/*.scss\" -c \"npm run css\"",
     "watch:js": "chokidar \"src/sites/assets/js/**/*.(ts|vue)\" -c \"npm run js\"",
     "watch:json": "chokidar \"src/sites/**/*.json\" -c \"npm run json\"",
-=======
-    "js:lint": "eslint src/sites/assets/js -c .eslintrc.json --ext ts,tsx; exit 0",
-    "prod:js": "run-s js:lint prod:js:ts",
-    "prod:js:ts": "webpack --mode production",
-    "watch": "run-p watch:*",
-    "watch:ejs": "chokidar \"src/**/*.ejs\" -c \"npm run ejs\"",
-    "watch:css": "chokidar \"src/sites/assets/scss/**/*.scss\" -c \"npm run css\"",
-    "watch:js": "chokidar \"src/sites/assets/js/**/*.ts\" -c \"npm run js\"",
->>>>>>> c4d71e37f92d761183fd9d007a62e7eece843960
     "watch:image": "chokidar  \"src/**/*.(gif|jpg|png|svg)\" -c \"npm run image\"",
     "server": "browser-sync start --config bs-config.js",
     "update": "ncu -u"
@@ -66,17 +52,11 @@
     "cpx": "^1.5.0",
     "css-mqpacker": "^7.0.0",
     "csswring": "^7.0.0",
-<<<<<<< HEAD
     "ejs": "^3.1.5",
     "ejs-cli": "^2.2.1",
     "eslint": "^7.7.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
-=======
-    "ejs-cli": "^2.1.1",
-    "eslint": "^6.8.0",
-    "eslint-plugin-prettier": "^3.1.2",
->>>>>>> c4d71e37f92d761183fd9d007a62e7eece843960
     "html-minifier": "^4.0.0",
     "imagemin": "^7.0.1",
     "imagemin-cli": "^6.0.0",
