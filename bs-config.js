@@ -37,7 +37,7 @@ module.exports = {
     },
     "server": false,
     "https": true,
-    "proxy": "LOCAL_HOST_NAME:8000",
+    "proxy": "LOCAL_HOST_NAME",
     "port": 3000,
     "middleware": false,
     "serveStatic": [],
