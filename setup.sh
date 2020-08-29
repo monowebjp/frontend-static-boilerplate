@@ -72,7 +72,7 @@ rm setup.sh
 find . -exec chmod 777 {} +
 
 yarn install
-docker-compose up -d
-npm start
+#docker-compose up -d
+#npm start
 
 echo '環境を構築しました'
