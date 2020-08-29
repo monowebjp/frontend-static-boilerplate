@@ -26,7 +26,7 @@ if [ $? = 0 ]; then
     echo "hostsが追加されているので追記はSkipします"
 else
     echo "hostsに追記します"
-    echo "127.0.0.1  $HOST_NAME" >> /private/etc/hosts
+    echo "192.168.33.1  $HOST_NAME" >> /private/etc/hosts
 fi
 
 curl -L -O https://github.com/monowebjp/frontend-static-boilerplate/archive/master.zip
