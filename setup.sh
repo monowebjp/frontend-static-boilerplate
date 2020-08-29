@@ -45,7 +45,9 @@ mv frontend-static-boilerplate-master/.editorconfig ./.editorconfig
 mv frontend-static-boilerplate-master/.eslintrc.json ./.eslintrc.json
 mv frontend-static-boilerplate-master/.gitignore ./.gitignore
 mv frontend-static-boilerplate-master/.stylelintrc ./.stylelintrc
+mv frontend-static-boilerplate-master/.node-version ./.node-version
 rm -r frontend-static-boilerplate-master
+rm -r org-chimata-ssl-certs
 
 
 
